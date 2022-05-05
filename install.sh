@@ -8,3 +8,6 @@ sed -i 's/geteuid/getppid/' /usr/bin/vlc
 sudo apt-get update
 sudo apt-get install vsftpd
 sudo nano /etc/vsftpd.conf
+sudo service vsftpd restart
+sudo systemctl enable vsftpd
+systemctl start vsftpd
